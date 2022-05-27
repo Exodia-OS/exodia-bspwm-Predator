@@ -1,5 +1,5 @@
-# bspwm-Predator
-BSPWM Configurations for exodia Predator edition
+<h1 align="center"> bspwm-Predator </h1>
+<p align="center"> BSPWM Configurations for exodia Predator edition </p>
 
 <!-- shields -->
 
