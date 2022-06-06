@@ -21,7 +21,7 @@
 <!-- shields -->
 
 <!-- reviewing themes -->
-[![Predator](GIFs/Predator.gif)](https://drive.google.com/file/d/1oAnRYYdb1zVIZLnppeKMABg10MFjrGJ6/view?usp=sharing)
+[![Predator](GIFs/DEMO.gif)](https://drive.google.com/file/d/1oAnRYYdb1zVIZLnppeKMABg10MFjrGJ6/view?usp=sharing)
 
 <!-- reviewing themes -->
 
