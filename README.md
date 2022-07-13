@@ -21,7 +21,7 @@
 <!-- shields -->
 
 <!-- reviewing themes -->
-[![Predator](GIFs/DEMO.gif)](https://drive.google.com/file/d/1oAnRYYdb1zVIZLnppeKMABg10MFjrGJ6/view?usp=sharing)
+[![Predator](GIFs/view.gif)](https://drive.google.com/file/d/1mR9TWm1-hK3ykdHdFQCJduFSDosoOilc/view?usp=sharing)
 
 <!-- reviewing themes -->
 
@@ -31,29 +31,21 @@
 
 <h2 align="center">Available Themes Previews</h2>
 
-|Blade|CyberPunk|Hack|
+|Red Jungles|Emilia|Gruvbox|
 |--|--|--|
-| ![](GIFs/Blade.gif) | ![](GIFs/CyberPunk.gif) | ![](GIFs/Hack.gif) |
+| ![](GIFs/Red-Jungles.png) | ![](GIFs/Emilia.png) | ![](GIFs/Gruvbox.png) |
 
-|Rick|Hack The Box|Hack The Box Colored|
+|Hack|Red and Black|Rick|
 |--|--|--|
-| ![](GIFs/Rick.gif) | ![](GIFs/HackTheBox.gif) | ![](GIFs/HackTheBoxColored.gif) |
+| ![](GIFs/Hack.png) | ![](GIFs/Red-And-Black.png) | ![](GIFs/Rick.png) |
 
-|BlackArch|Neon|Tigger In Atlantis|
+|Hack The Box|BlackArch|Neon|
 |--|--|--|
-| ![](GIFs/BlackArch.gif) | ![](GIFs/Neon.gif) | ![](GIFs/TiggerInAtlantis.gif) |
+| ![](GIFs/Hack-The-Box.png) | ![](GIFs/BlackArch.png) | ![](GIFs/Neon.png) |
 
-|Bouquet|Emilia|Red and Black|
+|AXYL|Amarena|JapaneseCity|
 |--|--|--|
-| ![](GIFs/Bouquet.gif) | ![](GIFs/Emilia.gif) | ![](GIFs/RedAndBlack.gif) |
-
-|AXYL|Amarena|Everblush|
-|--|--|--|
-| ![](GIFs/AXYL.gif) | ![](GIFs/Amarena.gif) | ![](GIFs/Everblush.gif) |
-
-|Groot|Gruvbox|JapaneseCity|
-|--|--|--|
-| ![](GIFs/Groot.gif) | ![](GIFs/Gruvbox.gif) | ![](GIFs/JapaneseCity.gif) |
+| ![](GIFs/AXYL.png) | ![](GIFs/Amarena.png) | ![](GIFs/JapaneseCity.png) |
 
 <!-- Available Themes Previews -->
 
