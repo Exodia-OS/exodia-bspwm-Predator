@@ -33,9 +33,10 @@ package() {
 	chmod +x "$bspwm_dir"/bin/*
 	chmod +x "$bspwm_dir"/rofi/bin/*
 
-	install -Dm 755 ${srcdir}/bspwm/bspwmrc   			"$bspwm_dir"/bspwmrc
-	install -Dm 644 ${srcdir}/bspwm/picom.conf   		"$bspwm_dir"/picom.conf
-	install -Dm 644 ${srcdir}/dunst/dunstrc   			"$config_dir"/dunst/dunstrc
-	install -Dm 644 ${srcdir}/sxhkd/sxhkdrc        		"$config_dir"/sxhkd/sxhkdrc
+	install -Dm 755 ${srcdir}/bspwm/bspwmrc   				   	   "$bspwm_dir"/bspwmrc
+	install -Dm 644 ${srcdir}/bspwm/picom.conf   				   "$bspwm_dir"/picom.conf
+	install -Dm 644 ${srcdir}/dunst/dunstrc   					   "$config_dir"/dunst/dunstrc
+	install -Dm 644 ${srcdir}/sxhkd/sxhkdrc        		           "$config_dir"/sxhkd/sxhkdrc
+	install -Dm 755 ${srcdir}/predator/keyColorProfileForStartup   "$config_dir"/predator/keyColorProfileForStartup
 	
 }
