@@ -4,7 +4,7 @@
 
 pkgname=exodia-bspwm-predator
 pkgver=1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="BSPWM Config For Exodia OS Predator Release"
 arch=('any')
 url="https://github.com/Exodia-OS/exodia-bspwm"
@@ -37,6 +37,5 @@ package() {
 	install -Dm 644 ${srcdir}/bspwm/picom.conf   				   "$bspwm_dir"/picom.conf
 	install -Dm 644 ${srcdir}/dunst/dunstrc   					   "$config_dir"/dunst/dunstrc
 	install -Dm 644 ${srcdir}/sxhkd/sxhkdrc        		           "$config_dir"/sxhkd/sxhkdrc
-	install -Dm 755 ${srcdir}/predator/keyColorProfileForStartup   "$config_dir"/predator/keyColorProfileForStartup
 	
 }
