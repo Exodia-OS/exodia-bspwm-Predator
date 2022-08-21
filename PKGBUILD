@@ -26,7 +26,10 @@ package() {
 
 	local config_dir=${pkgdir}/etc/skel/.config
 	local bspwm_dir=${config_dir}/bspwm
-	mkdir -p "$config_dir" "$bspwm_dir"
+	local dunst_dir=${config_dir}/dunst
+	local sxhkd_dir=${config_dir}/sxhkd
+	
+	mkdir -p "$config_dir" "$bspwm_dir" "$dunst_dir" "$sxhkd_dir"
 
 	cp -r ${srcdir}/*	"$config_dir"
 
