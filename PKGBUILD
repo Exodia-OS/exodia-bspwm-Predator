@@ -4,7 +4,7 @@
 
 pkgname=exodia-bspwm-predator
 pkgver=2.0
-pkgrel=1
+pkgrel=2
 pkgdesc="BSPWM Config For Exodia OS Predator Release"
 arch=('any')
 url="https://github.com/Exodia-OS/exodia-bspwm"
@@ -13,7 +13,7 @@ depends=('bspwm' 'sxhkd' 'alacritty' 'thunar' 'geany'
 		'rofi' 'polybar' 'dunst' 'mpd' 'mpc' 'maim' 
 		'xclip' 'viewnior' 'feh' 'ksuperkey' 'betterlockscreen'
 		'xfce4-power-manager' 'xsettingsd' 'xorg-xsetroot'
-		'wmname' 'Predator-Sense-systemd-git' 'xsensors' 'stacer'
+		'wmname' 'xsensors' 'stacer'
 )
 
 prepare() {
