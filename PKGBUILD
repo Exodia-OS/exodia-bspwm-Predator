@@ -1,9 +1,9 @@
 #
-# Maintainer: Mahmoud Mohamed (Ozil) <mmsaeed509@gmail.com> , <https://github.com/mmsaeed509>
+# Maintainer: Mahmoud Mohamed (00xWolf) <mmsaeed509@gmail.com> , <https://github.com/mmsaeed509>
 #
 
 pkgname=exodia-bspwm-predator
-pkgver=4.6
+pkgver=4.7
 pkgrel=9
 pkgdesc="BSPWM Config For Exodia OS Predator Release"
 arch=('any')
