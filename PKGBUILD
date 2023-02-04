@@ -3,8 +3,8 @@
 #
 
 pkgname=exodia-bspwm-predator
-pkgver=5.0
-pkgrel=3
+pkgver=6.0
+pkgrel=1
 pkgdesc="BSPWM Config For Exodia OS Predator Release"
 arch=('any')
 url="https://github.com/Exodia-OS/exodia-bspwm"
@@ -17,6 +17,7 @@ depends=(
 	'xfce4-power-manager' 'xsettingsd' 'xorg-xsetroot'
 	'wmname' 'xsensors' 'stacer' 'powershell-preview-bin'
 	'exodia-oh-my-posh' 'jgmenu' 'exodia-jgmenu' 'lsd'
+	'exodia-skeleton'
 )
 
 prepare() {
