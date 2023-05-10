@@ -75,6 +75,7 @@ KeyProfileColor -$6" > "$BSP"/bin/keyColorProfileForStartup
 	# betterlockscreen -u /usr/share/backgrounds/${1}
 
 	# ----- reload config ----- #
+	dunstify -i "" "[+] Reload The Configurations"
 	bspc wm --restart
 
 	# ----- notify ----- #
