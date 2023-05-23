@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+#####################################
+#                                   #
+#  @author      : 00xWolf           #
+#    GitHub    : @mmsaeed509       #
+#    Developer : Mahmoud Mohamed   #
+#  﫥  Copyright : Exodia OS         #
+#                                   #
+#####################################
+
+# bspwm config directory #
+BSPWM_DIR="$HOME/.config/bspwm"
+PICOM=$(grep -oP 'picom = \K.*' "${BSPWM_DIR}"/exodia.conf)
+
+# Terminate if picom is already running #
+killall -q picom
+
+# Wait until the processes have been shut down #
+while pgrep -u $UID -x picom >/dev/null; do sleep 1; done
+
+# Launch picom #
+picom -b --experimental-backends --config ${BSPWM_DIR}/picom/${PICOM} &

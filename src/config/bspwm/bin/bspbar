@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+#####################################
+#                                   #
+#  @author      : 00xWolf           #
+#    GitHub    : @mmsaeed509       #
+#    Developer : Mahmoud Mohamed   #
+#  﫥  Copyright : Exodia OS         #
+#                                   #
+#####################################
+
+# fix padding #
+bspc config bottom_padding 0
+bspc config top_padding 0
+
+# Files and Directories #
+BSPWM_DIR="$HOME/.config/bspwm"
+
+# get the theme name to launch its bar #
+BAR=$(grep -Po 'polybar\s*=\s*\K.*' ${BSPWM_DIR}/exodia.conf)
+
+# launch polybar #
+bash "${BSPWM_DIR}"/polybar/"${BAR}"/launch.sh

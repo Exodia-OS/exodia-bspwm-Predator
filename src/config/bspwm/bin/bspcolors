@@ -1,0 +1,231 @@
+#!/usr/bin/env bash
+
+#####################################
+#                                   #
+#  @author      : 00xWolf           #
+#    GitHub    : @mmsaeed509       #
+#    Developer : Mahmoud Mohamed   #
+#  﫥  Copyright : Exodia OS         #
+#                                   #
+#####################################
+
+# A script to get colours from xrdb & deploy it to polybar, alacritty, rofi, jgmenu, dunst. #
+
+DIR="$HOME/.config/bspwm"
+JGMENU_DIR="$HOME/.config/jgmenu"
+
+# get icons for jgmenus #
+ICONS=$(grep -oP 'icons = \K.*' "${DIR}/exodia.conf")
+
+# get the theme name to launch its bar #
+IMG=$(grep -oP 'polybar = \K.*' "${DIR}/exodia.conf")
+
+# get No. themes #
+NUM_OF_THEMES=$(cd ${DIR}/notify && ls -l | grep -v "^d" | wc -l)
+NUM_OF_THEMES=$((NUM_OF_THEMES-2)) # subtracted by 2, as we don't calculate `notify` script #
+
+GET_COLORS () {
+
+	FOREGROUND="$(xrdb -query | grep 'foreground:'| awk '{print $NF}')"
+	BACKGROUND="$(xrdb -query | grep 'background:'| awk '{print $NF}')"
+	CURSOR="$(xrdb -query | grep 'cursorColor:'| awk '{print $NF}')"
+	BLACK="$(xrdb -query | grep 'color0:'| awk '{print $NF}')"
+	RED="$(xrdb -query | grep 'color1:'| awk '{print $NF}')"
+	GREEN="$(xrdb -query | grep 'color2:'| awk '{print $NF}')"
+	YELLOW="$(xrdb -query | grep 'color3:'| awk '{print $NF}')"
+	BLUE="$(xrdb -query | grep 'color4:'| awk '{print $NF}')"
+	MAGENTA="$(xrdb -query | grep 'color5:'| awk '{print $NF}')"
+	CYAN="$(xrdb -query | grep 'color6:'| awk '{print $NF}')"
+	WHITE="$(xrdb -query | grep 'color7:'| awk '{print $NF}')"
+	ALTBLACK="$(xrdb -query | grep 'color8:'| awk '{print $NF}')"
+	ALTRED="$(xrdb -query | grep 'color9:'| awk '{print $NF}')"
+	ALTGREEN="$(xrdb -query | grep 'color10:'| awk '{print $NF}')"
+	ALTYELLOW="$(xrdb -query | grep 'color11:'| awk '{print $NF}')"
+	ALTBLUE="$(xrdb -query | grep 'color12:'| awk '{print $NF}')"
+	ALTMAGENTA="$(xrdb -query | grep 'color13:'| awk '{print $NF}')"
+	ALTCYAN="$(xrdb -query | grep 'color14:'| awk '{print $NF}')"
+	ALTWHITE="$(xrdb -query | grep 'color15:'| awk '{print $NF}')"
+	
+}
+
+BSP_BAR () {
+
+	cat > $DIR/polybar/colors <<- EOF	
+	[color]
+
+	FOREGROUND = ${FOREGROUND}
+	BACKGROUND = ${BACKGROUND}
+	BLACK = ${BLACK}
+	RED = ${RED}
+	GREEN = ${GREEN}
+	YELLOW = ${YELLOW}
+	BLUE = ${BLUE}
+	MAGENTA = ${MAGENTA}
+	CYAN = ${CYAN}
+	WHITE = ${WHITE}
+	ALTBLACK = ${ALTBLACK}
+	ALTRED = ${ALTRED}
+	ALTGREEN = ${ALTGREEN}
+	ALTYELLOW = ${ALTYELLOW}
+	ALTBLUE = ${ALTBLUE}
+	ALTMAGENTA = ${ALTMAGENTA}
+	ALTCYAN = ${ALTCYAN}
+	ALTWHITE = ${ALTWHITE}
+	EOF
+
+}
+
+BSP_TERM () {
+
+	cat > "$DIR"/alacritty/colors.yml <<- _EOF_
+		## Colors configuration
+		colors:
+		  # Default colors
+		  primary:
+		    background: '${BACKGROUND}'
+		    foreground: '${FOREGROUND}'
+
+		  # Normal colors
+		  normal:
+		    black:   '${BLACK}'
+		    red:     '${RED}'
+		    green:   '${GREEN}'
+		    yellow:  '${YELLOW}'
+		    blue:    '${BLUE}'
+		    magenta: '${MAGENTA}'
+		    cyan:    '${CYAN}'
+		    white:   '${WHITE}'
+
+		  # Bright colors
+		  bright:
+		    black:   '${ALTBLACK}'
+		    red:     '${ALTRED}'
+		    green:   '${ALTGREEN}'
+		    yellow:  '${ALTYELLOW}'
+		    blue:    '${ALTBLUE}'
+		    magenta: '${ALTMAGENTA}'
+		    cyan:    '${ALTCYAN}'
+		    white:   '${ALTWHITE}'
+	_EOF_
+
+}
+
+BSP_ROFI () {
+
+	cat > $DIR/rofi/themes/colors.rasi <<- EOF	
+	/* 
+	
+  	@author      : 00xWolf
+  	  GitHub    : @mmsaeed509
+  	  Developer : Mahmoud Mohamed
+  	﫥  Copyright : Exodia OS
+
+ 	*/
+
+	* {
+
+		background:			${BACKGROUND};
+		foreground:			${FOREGROUND};
+		selected:			${BLUE};
+		background-alt:		${MAGENTA};
+		urgent:				${RED};
+		active:				${GREEN};
+		off:				${RED};
+
+	}
+	EOF
+
+}
+
+BSP_DUNST () {
+
+    sed -i '/urgency_low/Q' ${DIR}/dunst/dunstrc
+	cat >> ${DIR}/dunst/dunstrc <<- _EOF_
+[urgency_low]
+timeout = 2
+background  = "${BACKGROUND}"
+foreground  = "${FOREGROUND}"
+frame_color = "${BLUE}"
+
+[urgency_normal]
+timeout = 5
+background  = "${BACKGROUND}"
+foreground  = "${FOREGROUND}"
+frame_color = "${BLUE}"
+
+[urgency_critical]
+timeout = 0
+background  = "${BACKGROUND}"
+foreground  = "${FOREGROUND}"
+frame_color = "${BLUE}"
+	_EOF_
+
+}
+
+BSP_JGMENU () {
+
+    # set the new values #
+    sed -i "s/icon_theme\s*=\s*.*/icon_theme = ${ICONS}/" ${JGMENU_DIR}/jgmenurc
+    sed -i "s/color_menu_bg\s*=\s*.*/color_menu_bg = ${BACKGROUND} 100/" ${JGMENU_DIR}/jgmenurc
+    sed -i "s/color_menu_border\s*=\s*.*/color_menu_border = ${FOREGROUND}/" ${JGMENU_DIR}/jgmenurc
+    sed -i "s/color_norm_bg\s*=\s*.*/color_norm_bg = ${BACKGROUND} 0/" ${JGMENU_DIR}/jgmenurc
+    sed -i "s/color_norm_fg\s*=\s*.*/color_norm_fg = ${FOREGROUND} 100/" ${JGMENU_DIR}/jgmenurc
+    sed -i "s/color_sel_bg\s*=\s*.*/color_sel_bg = ${FOREGROUND} 50/" ${JGMENU_DIR}/jgmenurc
+    sed -i "s/color_sel_fg\s*=\s*.*/color_sel_fg = ${FOREGROUND} 100/" ${JGMENU_DIR}/jgmenurc
+    sed -i "s/color_sep_fg\s*=\s*.*/color_sep_fg = ${FOREGROUND} 40/" ${JGMENU_DIR}/jgmenurc
+
+}
+
+BSP_ROFI_THEMES_MENU () {
+
+    sed -i "s/background-image: .*/background-image:            url(\"~\/.config\/bspwm\/notify\/${IMG}.png\", width);/" ${DIR}/rofi/themes/themes.rasi
+    sed -i "s/str:.*/str: \" [${NUM_OF_THEMES}] Bspwm Themes Are Available In Exodia OS \\\n   Have fun with your favorite theme \";/" ${DIR}/rofi/themes/themes.rasi
+
+    sed -i '/element selected.normal/Q' ${DIR}/rofi/themes/themes.rasi
+	cat >> ${DIR}/rofi/themes/themes.rasi <<- _EOF_
+element selected.normal {
+    background-image: linear-gradient(${FOREGROUND}, ${FOREGROUND}, ${BACKGROUND});
+    text-color:                  @background;
+}
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+
+/*****----- Message -----*****/
+message {
+    background-color:            transparent;
+}
+textbox {
+    padding:                     12px;
+    border-radius:               5px;
+    background-color:            @background-alt;
+    text-color:                  @foreground;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+error-message {
+    padding:                     12px;
+    border-radius:               5px;
+    background-color:            @background;
+    text-color:                  @foreground;
+}
+	_EOF_
+}
+
+main () {
+
+	GET_COLORS
+	BSP_BAR
+	BSP_TERM
+	BSP_ROFI
+	BSP_DUNST
+	BSP_JGMENU
+	BSP_ROFI_THEMES_MENU
+	
+}
+
+main
