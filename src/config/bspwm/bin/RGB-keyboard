@@ -210,5 +210,119 @@ elif [[ "$1" == "-IslamicWarrior" ]];
 		sleep 0.3
 		facer_rgb.py -m 0 -z 4 -cR 0 -cB 255 -cG 0 -b 100
 	
+# ---------------------------- No. 18 -- > pink ----------------------------
+
+elif [[ "$1" == "-pink" ]];
+
+	then
+	
+		facer_rgb.py -m 0 -z 1 -cR 255 -cB 112 -cG 0 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 2 -cR 255 -cB 112 -cG 0 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 3 -cR 255 -cB 112 -cG 0 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 4 -cR 255 -cB 112 -cG 0 -b 100
+
+# ------------------------------ No. 19 --> Violet ---------------------------------
+
+elif [[ "$1" == "-violet" ]];
+	
+	then
+		
+		facer_rgb.py -m 0 -z 1 -cR 175 -cB 255 -cG 0 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 2 -cR 175 -cB 255 -cG 0 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 3 -cR 175 -cB 255 -cG 0 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 4 -cR 175 -cB 255 -cG 0 -b 100
+	
+
+# -------------------------------------------------- No. 20 --> Blue ------------------------------------
+
+elif [[ "$1" == "-blue" ]];
+	
+	then
+		
+		facer_rgb.py -m 0 -z 1 -cR 0 -cB 255 -cG 0 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 2 -cR 0 -cB 255 -cG 0 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 3 -cR 0 -cB 255 -cG 0 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 4 -cR 0 -cB 255 -cG 0 -b 100
+
+# -------------------------------------------------- No. 21 --> Green ------------------------------------
+
+elif [[ "$1" == "-green" ]];
+	
+	then
+		
+		facer_rgb.py -m 0 -z 1 -cR 0 -cB 0 -cG 255 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 2 -cR 0 -cB 0 -cG 255 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 3 -cR 0 -cB 0 -cG 255 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 4 -cR 0 -cB 0 -cG 255 -b 100
+
+# -------------------------------------------------- No. 22 --> Red ------------------------------------
+
+elif [[ "$1" == "-red" ]];
+	
+	then
+		
+		facer_rgb.py -m 0 -z 1 -cR 255 -cB 0 -cG 0 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 2 -cR 255 -cB 0 -cG 0 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 3 -cR 255 -cB 0 -cG 0 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 4 -cR 255 -cB 0 -cG 0 -b 100
+
+# -------------------------------------------------- No. 23 --> Cyan ---------------------------------
+
+elif [[ "$1" == "-cyan" ]];
+	
+	then
+		
+		facer_rgb.py -m 0 -z 1 -cR 4 -cB 181 -cG 172 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 2 -cR 4 -cB 181 -cG 172 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 3 -cR 4 -cB 181 -cG 172 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 4 -cR 4 -cB 181 -cG 172 -b 100
+
+# --------------------------------------------------- No. 26 --> Yellow ------------------------------
+
+elif [[ "$1" == "-yellow" ]];
+	
+	then
+		
+		facer_rgb.py -m 0 -z 1 -cR 255 -cB 0 -cG 255 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 2 -cR 255 -cB 0 -cG 255 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 3 -cR 255 -cB 0 -cG 255 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 4 -cR 255 -cB 0 -cG 255 -b 100
+
+# --------------------------------------------------- No. 29 --> White ---------------------------------
+
+elif [[ "$1" == "-white" ]];
+	
+	then
+		
+		facer_rgb.py -m 0 -z 1 -cR 255 -cB 255 -cG 255 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 2 -cR 255 -cB 255 -cG 255 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 3 -cR 255 -cB 255 -cG 255 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 4 -cR 255 -cB 255 -cG 255 -b 100
+
 fi
+
 # ------------------------------------------------------------------------------- #
