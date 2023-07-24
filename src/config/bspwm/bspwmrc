@@ -87,7 +87,7 @@ if [[ ! `pidof xfce-polkit` ]];
 	then
 		
 		/usr/lib/xfce-polkit/xfce-polkit &
-		
+
 fi
 
 # Lauch keybindings daemon #
@@ -120,7 +120,6 @@ bspdunst
 bspfloat &
 
 # Lauch Exodia OS Assistant #
-
 STATUS=$(grep -Po 'exodia-assistant-auto-start\s*=\s*\K.*' ${BSPWM_DIR}/exodia.conf)
 
 if [[ ${STATUS} == "true" ]];
