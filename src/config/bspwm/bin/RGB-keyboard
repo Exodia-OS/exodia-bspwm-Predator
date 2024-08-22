@@ -47,7 +47,7 @@ HELP_MENU(){
 	echo -e "${BGreen}┃                                                              ┃                                                              ┃${RESET_COLOR}"
 	echo -e "${BGreen}┃          Run ${BCyan}\`RGB-keyboard -ChadWM\`          [${On_Green}    ${RESET_COLOR}${BGreen}]          ┃          Run ${BCyan}\`RGB-keyboard -HTB\`             ${BGreen}[${On_Blue} ${On_Blue} ${On_Green} ${On_Green} ${RESET_COLOR}${BGreen}]          ┃${RESET_COLOR}"
 	echo -e "${BGreen}┃                                                              ┃                                                              ┃${RESET_COLOR}"
-	echo -e "${BGreen}┃          Run ${BCyan}\`RGB-keyboard -Hack\`            [${On_Cyan}    ${RESET_COLOR}${BGreen}]${RESET_COLOR}${BGreen}          ┃                                                              ┃${RESET_COLOR}"
+	echo -e "${BGreen}┃          Run ${BCyan}\`RGB-keyboard -Hack\`            [${On_Cyan}    ${RESET_COLOR}${BGreen}]${RESET_COLOR}${BGreen}          ┃          Run ${BCyan}\`RGB-keyboard -Mortal\`          ${BGreen}[${On_Yellow} ${On_Yellow} ${On_Green} ${On_Green} ${RESET_COLOR}${BGreen}]          ┃${RESET_COLOR}"
 	echo -e "${BGreen}┃                                                              ┃                                                              ┃${RESET_COLOR}"
 	echo -e "${BGreen}┃          Run ${BCyan}\`RGB-keyboard -BlackRed\`        [${On_Red}    ${RESET_COLOR}${BGreen}]${RESET_COLOR}${BGreen}          ┃                                                              ┃${RESET_COLOR}"
 	echo -e "${BGreen}┃                                                              ┃                                                              ┃${RESET_COLOR}"
@@ -76,6 +76,8 @@ HELP_MENU(){
 	echo -e "${BGreen}┃          Run ${BCyan}\`RGB-keyboard -cyan\`            [${On_Cyan}    ${RESET_COLOR}${BGreen}]${RESET_COLOR}${BGreen}          ┃                                                              ┃${RESET_COLOR}"
 	echo -e "${BGreen}┃                                                              ┃                                                              ┃${RESET_COLOR}"
 	echo -e "${BGreen}┃          Run ${BCyan}\`RGB-keyboard -yellow\`          [${On_Yellow}    ${RESET_COLOR}${BGreen}]${RESET_COLOR}${BGreen}          ┃                                                              ┃${RESET_COLOR}"
+	echo -e "${BGreen}┃                                                              ┃                                                              ┃${RESET_COLOR}"
+	echo -e "${BGreen}┃          Run ${BCyan}\`RGB-keyboard -Smoke\`           [${On_Green}    ${RESET_COLOR}${BGreen}]${RESET_COLOR}${BGreen}          ┃                                                              ┃${RESET_COLOR}"
 	echo -e "${BGreen}┃                                                              ┃                                                              ┃${RESET_COLOR}"
 	echo -e "${BGreen}┃          Run ${BCyan}\`RGB-keyboard -white\`           [${On_White}    ${RESET_COLOR}${BGreen}]${RESET_COLOR}${BGreen}          ┃                                                              ┃${RESET_COLOR}"
 	echo -e "${BGreen}┃                                                              ┃                                                              ┃${RESET_COLOR}"
@@ -410,6 +412,35 @@ elif [[ "$1" == "-white" ]];
 		facer_rgb.py -m 0 -z 3 -cR 255 -cB 255 -cG 255 -b 100
 		sleep 0.3
 		facer_rgb.py -m 0 -z 4 -cR 255 -cB 255 -cG 255 -b 100
+
+# --------------------------------------------------- No. 30 --> Mortal Kombat X ---------------------------------
+
+elif [[ "$1" == "-Mortal" ]];
+	
+	then
+		
+		facer_rgb.py -m 0 -z 1 -cR 255 -cB 0 -cG 255 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 2 -cR 255 -cB 0 -cG 255 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 3 -cR 0 -cB 255 -cG 0 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 4 -cR 0 -cB 255 -cG 0 -b 100
+
+
+# --------------------------------------------------- No. 31 --> Smoke ---------------------------------
+
+elif [[ "$1" == "-Smoke" ]];
+	
+	then
+		
+		facer_rgb.py -m 0 -z 1 -cR 61 -cB 79 -cG 220 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 2 -cR 61 -cB 79 -cG 220 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 3 -cR 61 -cB 79 -cG 220 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 4 -cR 61 -cB 79 -cG 220 -b 100
 
 else
 
