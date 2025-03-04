@@ -81,6 +81,8 @@ HELP_MENU(){
 	echo -e "${BGreen}┃                                                              ┃                                                              ┃${RESET_COLOR}"
 	echo -e "${BGreen}┃          Run ${BCyan}\`RGB-keyboard -white\`           [${On_White}    ${RESET_COLOR}${BGreen}]${RESET_COLOR}${BGreen}          ┃                                                              ┃${RESET_COLOR}"
 	echo -e "${BGreen}┃                                                              ┃                                                              ┃${RESET_COLOR}"
+	echo -e "${BGreen}┃          Run ${BCyan}\`RGB-keyboard -00xWolf\`         [${On_Cyan}    ${RESET_COLOR}${BGreen}]${RESET_COLOR}${BGreen}          ┃                                                              ┃${RESET_COLOR}"
+	echo -e "${BGreen}┃                                                              ┃                                                              ┃${RESET_COLOR}"
 	echo -e "${BGreen}┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${RESET_COLOR}"
 	
 }
@@ -441,6 +443,20 @@ elif [[ "$1" == "-Smoke" ]];
 		facer_rgb.py -m 0 -z 3 -cR 61 -cB 79 -cG 220 -b 100
 		sleep 0.3
 		facer_rgb.py -m 0 -z 4 -cR 61 -cB 79 -cG 220 -b 100
+
+# --------------------------------------------------- No. 32 --> Mr. [00]xWol[F] ---------------------------------
+
+elif [[ "$1" == "-00xWolf" ]];
+	
+	then
+		
+		facer_rgb.py -m 0 -z 1 -cR 125 -cB 254 -cG 255 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 2 -cR 125 -cB 254 -cG 255 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 3 -cR 125 -cB 254 -cG 255 -b 100
+		sleep 0.3
+		facer_rgb.py -m 0 -z 4 -cR 125 -cB 254 -cG 255 -b 100
 
 else
 
