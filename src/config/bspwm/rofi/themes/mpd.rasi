@@ -60,7 +60,7 @@ inputbar {
     border-radius:               20px;
     border-color:                @selected;
     background-color:            transparent;
-    background-image:            url("/usr/share/backgrounds/acer_predator_helios_300_personalized_wallpaper_by_rrcampong_de3h39v.jpg", width);
+    background-image:            url("/usr/share/backgrounds/wolf.jpeg", width);
     text-color:                  @foreground;
     children:                    [ "dummy", "textbox-prompt-colon", "prompt", "dummy"];
 }
