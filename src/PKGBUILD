@@ -3,8 +3,8 @@
 #
 
 pkgname=exodia-bspwm-predator
-pkgver=9.0
-pkgrel=2
+pkgver=10.0
+pkgrel=0
 pkgdesc="BSPWM Config For Exodia OS Predator Release"
 arch=('any')
 url="https://github.com/Exodia-OS/exodia-bspwm"
