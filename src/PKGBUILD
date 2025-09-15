@@ -5,9 +5,9 @@
 pkgname=exodia-bspwm-predator
 pkgver=10.0
 pkgrel=0
-pkgdesc="BSPWM Config For Exodia OS Predator Release"
+pkgdesc="BSPWM Config For Exodia OS Acer-Predator Release"
 arch=('any')
-url="https://github.com/Exodia-OS/exodia-bspwm"
+url="https://github.com/Exodia-OS/exodia-bspwm-Predator"
 license=('GPL3')
 install=${pkgname}.install
 conflicts=('exodia-bspwm')
