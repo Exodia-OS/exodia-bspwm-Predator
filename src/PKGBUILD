@@ -13,17 +13,17 @@ install=${pkgname}.install
 conflicts=('exodia-bspwm')
 depends=(
 
-	'bspwm' 'sxhkd' 'alacritty' 'thunar' 'geany' 'xdo'
-	'rofi' 'polybar' 'dunst' 'mpd' 'mpc' 'maim' 'xqp'
+	'bspwm' 'sxhkd' 'alacritty' 'thunar' 'geany' 'xdo' 'tint2'
+	'rofi' 'polybar' 'dunst' 'mpd' 'mpc' 'maim' 'xqp' 'lsd'
 	'xclip' 'viewnior' 'feh' 'ksuperkey' 'betterlockscreen'
 	'xfce4-power-manager' 'xsettingsd' 'xorg-xsetroot'
 	'wmname' 'xsensors' 'stacer' 'powershell-preview-bin'
-	'exodia-oh-my-posh' 'jgmenu' 'exodia-jgmenu' 'lsd'
+	'exodia-oh-my-posh' 'jgmenu' 'exodia-jgmenu' 'windows-backgrounds'
 	'mesa-utils' 'exodia-assistant' 'mortal-kombat-x-backgrounds'
 	'catppuccin-backgrounds' 'exodia-cyberpunk-backgrounds'
 	'exodia-default-backgrounds' 'exodia-islamic-warrior-backgrounds' 
 	'extra-backgrounds' 'kali-backgrounds' 'mac-os-x-backgrounds' 
-	'msi-backgrounds' 'parrot-backgrounds' 'tokyo-backgrounds' 'windows-backgrounds'
+	'msi-backgrounds' 'parrot-backgrounds' 'tokyo-backgrounds' 
 	
 )
 
