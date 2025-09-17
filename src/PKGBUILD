@@ -3,7 +3,7 @@
 #
 
 pkgname=exodia-bspwm-predator
-pkgver=10.0
+pkgver=10.1
 pkgrel=1
 pkgdesc="BSPWM Config For Exodia OS Acer-Predator Release"
 arch=('any')
