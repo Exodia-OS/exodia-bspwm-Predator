@@ -1,3 +1,4 @@
+# Now, The Project has moved to [**`Exodia-Acer-Predator-Edition/exodia-bspwm-Predator`**](https://github.com/Exodia-Acer-Predator-Edition/exodia-bspwm-Predator)
 <h1 align="center"> bspwm-Predator </h1>
 <p align="center"> BSPWM Configurations for exodia Predator edition </p>
 
